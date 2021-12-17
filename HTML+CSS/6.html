@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="Just another page">
+    <title>Page with a form</title>
+    <link rel="icon" href="assets/Hellsing-Alucard.png"> 
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Just another page</h1>
+            <h2>But this time it has a form!</h2>
+        </div>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Your personal information</legend>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" />
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+            </p>
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" />
+            </p>
+            <p>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" />
+            </p>
+            <p>
+                <label for="photo">Photo</label>
+                <input type="file" id="photo" name="photo" />
+            </p>
+            <p>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" />
+            </p>         
+            <p>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Additional information</legend>
+            <label for="lng">Language</label>
+            <select id="lng">
+                <option value="rus">Russian</option>
+                <option value="eng">English</option>
+            </select>
+            <textarea id="area">Type your interests here</textarea>
+        </fieldset>
+
+        <p><input type="submit" value="Send" /></p>
+    </form>
+</body>
+</html>
