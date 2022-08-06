@@ -1,13 +1,19 @@
 import java.util.Scanner;
 import java.io.*;
-import java.util.Date;
+import java.time.*;
+import java.util.*;
 import java.nio.file.Path;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Locale;
+
+import npcs.*;
 
 class Start{
     public static void main(String[] args) throws IOException {
-        Scanner f = new Scanner(Path.of("myfile.txt"), StandardCharsets.UTF_8);
+/*         Scanner f = new Scanner(Path.of("myfile.txt"), StandardCharsets.UTF_8);
         String info = f.nextLine();
         System.out.println(info);
 
@@ -35,36 +41,23 @@ class Start{
 
         Human simplex = new Human("Jack", 37, Human.Sex.Male);
         System.out.println(simplex.getName() + " " + simplex.getAge() + " " + simplex.getSex());
-    }
-}
 
-class Human{
-    private String name;
-    private int age;
-    enum Sex {Male, Female}
-    private Sex sex;
+        LocalDate date = LocalDate.now();
+        final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd MMMM, yyyy", Locale.US);
+        System.out.println(date.format(dtf).toString());
+        System.out.println(date.toString());
 
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public Sex getSex(){
-        return sex;
-    }
-    public void setSex(Sex sex){
-        this.sex = sex;
-    }
-    public Human(String name, int age, Sex sex){
-        this.name = name;
-        this.age = age;
-        this.sex = sex; 
+        Human humanTest = new Human(null, 37, Human.Sex.Male);
+        System.out.println(humanTest.getName() + " " + humanTest.getAge() + " " + humanTest.getSex()); */
+
+        Group group = new Group(10);
+        Scanner in = new Scanner(System.in);
+        while(true){
+            System.out.print("Human number: ");
+            int num = in.nextInt();
+            if (num == 0) break;
+            var x = group.getHuman(num);
+            System.out.println(x.getName() + " " + x.getAge() + " " + x.getSex());
+        }
     }
 }
