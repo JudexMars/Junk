@@ -1,0 +1,4 @@
+@ECHO OFF
+TITLE Running java app
+java -cp c:\Github\Junk\Java\classdir;.;c:\Github\Junk\Java\jardir\archive.jar Start
+PAUSE

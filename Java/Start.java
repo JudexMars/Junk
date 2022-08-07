@@ -1,4 +1,7 @@
 import java.util.Scanner;
+
+import classdir.npcs.*;
+
 import java.io.*;
 import java.time.*;
 import java.util.*;
@@ -8,8 +11,6 @@ import java.util.Arrays;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-
-import npcs.*;
 
 class Start{
     public static void main(String[] args) throws IOException {

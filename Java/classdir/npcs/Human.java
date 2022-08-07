@@ -1,12 +1,13 @@
 package npcs;
-
+import java.util.Objects;
+import java.util.Scanner;
 public class Human{
     static int population = 0;
 
     private int id;
     private String name;
     private int age;
-    enum Sex {Male, Female}
+    public enum Sex {Male, Female}
     private Sex sex;
 
     public String getName() {

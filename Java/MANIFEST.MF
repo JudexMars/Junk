@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: 17.0.2 (Oracle Corporation)
+Description: This jar file contains a program that tests loading package
+ s and jar files from different directories.
+
