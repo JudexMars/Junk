@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2022-08-14T16:19:23.865175500Z</date>
+  <millis>1660493963865</millis>
+  <nanos>175500</nanos>
+  <sequence>2</sequence>
+  <logger>International logger</logger>
+  <level>INFO</level>
+  <class>Exceptions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Чтение файла...</message>
+  <key>readingFile</key>
+  <catalog>loggers.localization.logmessages</catalog>
+</record>
+<record>
+  <date>2022-08-14T16:19:23.880177200Z</date>
+  <millis>1660493963880</millis>
+  <nanos>177200</nanos>
+  <sequence>3</sequence>
+  <logger>International logger</logger>
+  <level>INFO</level>
+  <class>Exceptions</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Примечание: Govnokod</message>
+  <key>devMsg</key>
+  <catalog>loggers.localization.logmessages</catalog>
+  <param>Govnokod</param>
+</record>
+</log>
