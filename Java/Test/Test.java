@@ -8,4 +8,4 @@ public class Test{
         PrintStream ps = new PrintStream(System.out, true, "Cp866");
         ps.println("Hello World!");
     }
-}x
+}
